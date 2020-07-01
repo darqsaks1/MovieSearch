@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>MovieSearch</title>
+    <link rel="shortcut icon" href="src/img/wolterWhite.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class='header-container'>
+            <h2>MovieSearch</h2>
+            <img src='./src/img/fattyEight.png' class='fatty-eight' alt='wolterWhite1'>
+        </div>
+    </header>
+    <main class ='main'>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" class ='check' type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+            <ul class="menu__box">
+                <li class='raiting'>IMDb RATING
+
+                </li>
+                <li class='click'>click
+
+                </li>
+                <li>
+                    <a class="menu__item" href="#">
+                        <div class="fab">
+                            <span class="fab-action-button">
+                                  <i class="fab-action-button__icon"></i>
+                            </span>
+                            <ul class="fab-buttons">
+                                <li class="fab-buttons__item">
+                                    <a href="#" class="fab-buttons__link buttonShow" data-tooltip="IMBd top 5 TV SERIALS">
+                                        <i class="icon-material icon-material_gp"></i>
+                                    </a>
+                                </li>
+                                <li class="fab-buttons__item">
+                                    <a href="#" class="fab-buttons__link  buttonClickOne" data-tooltip="IMBd top 5 Rating Movies">
+                                        <i class="icon-material icon-material_li">  </i>
+                                    </a>
+                                </li>
+                                <li>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div>
+            <ul class="body_slides">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class='modal-wrapper display-none'>
+            <div class='modal-remove-button'></div>
+            <div class='flex-modal'>
+               
+                <div class="wrapper-M">
+                    <input type="radio" name="point" id="slide1" checked>
+                    <input type="radio" name="point" id="slide2">
+                    <input type="radio" name="point" id="slide3">
+                    <input type="radio" name="point" id="slide4">
+                    <input type="radio" name="point" id="slide5">
+                    <div class="slider">
+                        <div class="slides slide1">
+                            <div class='slider-text'>
+                                <h2 class='width-text'>#1 The Shawshank Redemption</h2>
+                                <div class='card-rating1'>9.3</div>
+                                <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency. (1994)</p>
+                                <iframe class='video-poster' src="https://www.youtube.com/embed/6hB3S9bIaco" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-poster'>
+                                <img class='img-poster' src="./src/img/modal/p1.jpg">
+                            </div>
+                        </div>
+                        <div class="slides slide2">
+                            <div class='slider-text'>
+                                <h2>#2 The Godfather</h2>
+                                <div class='card-rating1'>9.2</div>
+                                <p>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son. (1972)</p>
+                                <iframe class='video-poster' src="https://www.youtube.com/embed/CWoQlDlyQj4" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-poster'>
+                                <img class='img-poster' src="./src/img/modal/p2.jpg">
+                            </div>
+                        </div>
+                        <div class="slides slide3">
+                            <div class='slider-text'>
+                                <h2>#3 The Dark Knight</h2>
+                                <div class='card-rating1'>9,0</div>
+                                <p>When known as the Joker wreaks havoc the people of Gotham, Batman must accept physical tests of his ability to fight injustice. (2008)</p>
+                                <iframe class='video-poster' src="https://www.youtube.com/embed/EXeTwQWrcwY" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-poster'>
+                                <img class='img-poster' src="./src/img/modal/p3.jpg">
+                            </div>
+                        </div>
+                        <div class="slides slide4">
+                            <div class='slider-text'>
+                                <h2>#4 Pulp Fiction </h2>
+                                <div class='card-rating1'>8,9</div>
+                                <p>The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption. (1994)</p>
+                                <iframe class='video-poster' src="https://www.youtube.com/embed/s7EdQ4FqbhY" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-poster'>
+                                <img class='img-poster' src="./src/img/modal/p4.jpg">
+                            </div>
+                        </div>
+                        <div class="slides slide5">
+                            <div class='slider-text'>
+                                <h2 class='lords'>#5 The Lord of the Rings: The Fellowship of the Ring </h2>
+                                <div class='card-rating1'>8,8</div>
+                                <p>A meek Hobbit from the Shire set out on a journey to destroy the powerful One Ring and save Middle-earth. (2001)</p>
+                                <iframe class='video-poster' src="https://www.youtube.com/embed/V75dMMIW2B4" frameborder="0" allow="  picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-poster'>
+                                <img class='img-poster' src="./src/img/modal/p5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <label  class = 'labelModal' for="slide1"></label>
+                        <label  class = 'labelModal' for="slide2"></label>
+                        <label  class = 'labelModal' for="slide3"></label>
+                        <label  class = 'labelModal' for="slide4"></label>
+                        <label class = 'labelModal' for="slide5"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='modal-wrapperS display-none'>
+            <div class='modal-remove-buttonS'></div>
+            <div class='flex-modalS'>
+               
+                <div class="wrapper-MS">
+                    <input type="radio" name="point" id="slide1S" checked>
+                    <input type="radio" name="point" id="slide2S">
+                    <input type="radio" name="point" id="slide3S">
+                    <input type="radio" name="point" id="slide4S">
+                    <input type="radio" name="point" id="slide5S">
+                    <div class="sliderS">
+                        <div class="slidesS slide1S">
+                            <div class='slider-textS'>
+                                <h2 class='width-textS'>#1 Breaking Bad</h2>
+                                <div class='card-rating1S'>9.5</div>
+                                <p>A chemistry teacher turns to manufacturing and selling methamphetamine in order to secure his family's future.(2008 - 2013)</p>
+                                <iframe class='video-posterS' src="https://www.youtube-nocookie.com/embed/HhesaQXLuRY" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-posterS'>
+                                <img class='img-posterS' src="src/img/modal/modal2/p1.jpg">
+                            </div>
+                        </div>
+                        <div class="slidesS slide2S">
+                            <div class='slider-textS'>
+                                <h2>#2 Game of Thrones</h2>
+                                <div class='card-rating1S'>9.3</div>
+                                <p>Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia. (1972)</p>
+                                <iframe class='video-posterS' src="https://www.youtube.com/embed/rlR4PJn8b8I" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-posterS'>
+                                <img class='img-posterS' src="src/img/modal/modal2/p2.jpg">
+                            </div>
+                        </div>
+                        <div class="slidesS slide3S">
+                            <div class='slider-textS'>
+                                <h2>#3 True Detective</h2>
+                                <div class='card-rating1S'>9,0</div>
+                                <p>Seasonal anthology series in which police investigations unearth the personal and secrets of those involved. (2014 -)</p>
+                                <iframe class='video-posterS' src="https://www.youtube.com/embed/fVQUcaO4AvE" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-posterS'>
+                                <img class='img-posterS' src="src/img/modal/modal2/p3.jpg">
+                            </div>
+                        </div>
+                        <div class="slidesS slide4S">
+                            <div class='slider-textS'>
+                                <h2>#4 Stranger Things </h2>
+                                <div class='card-rating1S'>8,9</div>
+                                <p>When a young boy disappears, a chief and his friends must confront terrifying in order to get him back. (2016- )</p>
+                                <iframe class='video-poster' src="https://www.youtube.com/embed/mnd7sFt5c3A" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class='slider-posterS'>
+                                <img class='img-posterS' src="src/img/modal/modal2/p4.jpg">
+                            </div>
+                        </div>
+                        <div class="slidesS slide5S">
+                            <div class='slider-textS'>
+                                <h2> #5 Westworld</h2>
+                                <div class='card-rating1S'>8,7</div>
+                                <p>Set at the intersection of the near future and the past, explore which every human appetite consequence. (2016- )</p>
+                                <iframe class='video-posterS' src="https://www.youtube.com/embed/0JRdQu4lnIU" frameborder="0"></iframe>
+                            </div>
+
+                            <div class='slider-posterS'>
+                                <img class='img-posterS' src="src/img/modal/modal2/p5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controlsS">
+                        <label  class = 'labelModal'for="slide1S"></label>
+                        <label  class = 'labelModal'for="slide2S"></label>
+                        <label class = 'labelModal' for="slide3S"></label>
+                        <label class = 'labelModal' for="slide4S"></label>
+                        <label class = 'labelModal' for="slide5S"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='main-container'>
+            <form class='search'>
+
+                <input class='search-input' type='text' placeholder="Search movie" autofocus>
+                <button class='search-btn '>Search</button>
+                <span data-name="Clear" class='search-clear tooltip' data-tooltip="CLEAR"></span>
+                <span data-name="Clear" class='search-micro tooltip'></span>
+                <span data-name="Keyboard" class='search-tia'></span>
+                <div class="preloader display-none">
+                    <div class="loader"></div>
+                </div>
+            </form>
+            <p class='info'>Search your movie</p>
+
+            <div class='keyboard-body display-none'>
+            </div>
+            <div class='enter-clicked key long-control-key display-none'>ENTER</div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class='footer-container'>
+            <div>
+                <a href='https://rs.school/' class='rss'>RS School 2020q1</a>
+            </div>
+            <div>
+                <img src='./src/img/madMax.png' class='katana' alt='wolterWhite'>
+            </div>
+            <div class='github-positions'>
+                <img src='./src/img/github.ico' class='githubImg' alt='wolterWhite'>
+                <a href='https://github.com/darqsaks1' class='github'>darqsaks1</a>
+            </div>
+        </div>
+    </footer>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+</body>
+
+</html>

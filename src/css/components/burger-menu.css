@@ -1,0 +1,254 @@
+.fab {
+    margin-left: 180px;
+}
+
+.fab:hover .fab-buttons {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fab:hover .fab-buttons__link {
+    transform: scaleY(1) scaleX(1) translateY(-16px) translateX(0px);
+}
+
+.fab-action-button:hover+.fab-buttons .fab-buttons__link:before {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: right center 0;
+    transition-delay: 0.3s;
+}
+
+
+.fab-action-button {
+    cursor: pointer;
+    bottom: 0;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    background-image: url('../../img/imbd.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+.fab-buttons {
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.fab-action-button__icon {
+    display: inline-block;
+    background-size: 84px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fab-buttons__item {
+    display: block;
+    text-align: center;
+}
+
+.fab-buttons__link {
+    display: inline-block;
+    text-decoration: none;
+    transform: scaleY(0.5) scaleX(0.5) translateY(0px) translateX(0px);
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+[data-tooltip]:before {
+    top: 50%;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-family: 'Bangers', cursive;
+    margin-top: -11px;
+    font-weight: 600;
+    border-radius: 2px;
+    background: white;
+    color: black;
+    content: attr(data-tooltip);
+    font-size: 15px;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    padding: 4px 7px;
+    position: absolute;
+    transform: scale(0);
+    right: 100%;
+    white-space: nowrap;
+    transform-origin: top right;
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+[data-tooltip]:hover:before {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: right center 0;
+}
+
+.icon-material {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+}
+
+.icon-material_li {
+    background-image: url('../../img/vikings.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-material_gp {
+    background-image: url('../../img/winter.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 350px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    background-image: url('../../img/vader.jpg');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    z-index: 5;
+    transition: 15s linear;
+    box-shadow: 25px 0px 15px rgba(0, 0, 0, .2);
+    -webkit-transition: all 1200ms ease-in;
+    -moz-transition: all 10ms ease-in;
+    -ms-transition: all 10ms ease-in;
+    -o-transition: all 250ms ease-in;
+      transition: all 250ms ease-in;
+}
+
+.menu__box:hover {
+    background-size: 50%;
+    transition: 3s;
+
+}
+
+.click {
+    position: absolute;
+    bottom: 48px;
+    font-size: 35px;
+    font-family: 'IM Fell Double Pica SC', serif;
+    letter-spacing: 2px;
+    position: relative;
+    top: 83px; 
+    z-index: -1;
+       
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    z-index: 5
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    transition-duration: 0.25s;
+}
+
+.menu__box {
+    transition-duration: 1.25s;
+}
+
+.menu__item {
+    transition-duration: 1.25s;
+}
+
+.raiting {
+    font-size: 35px;
+    font-family: 'IM Fell Double Pica SC', serif;
+    letter-spacing: 2px;
+    position: relative;
+    top: -20px;
+}

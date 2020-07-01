@@ -1,0 +1,61 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    border-top: 3px solid rgb(246, 215, 75);
+}
+
+.footer-container a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+.footer-container a:hover {
+    color: rgb(202, 42, 25);
+}
+
+.githubImg {
+    width: 30px;
+    height: 30px;
+    color: white;
+    margin-right: 15px;
+}
+
+
+.face-with-pain {
+    height: 70px;
+    width: 90px
+}
+
+.face-with-pain1 {
+    height: 60px;
+    width: 100px;
+}
+
+.samurai {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.katana {
+    height: 40px;
+    width: 50px;
+    padding: 10px;
+}
+
+.katana:hover {
+    transition-duration: 6s;
+    transform: rotate(365deg);
+}
+
+.github-positions {
+    display: flex;
+    flex-direction: row;
+}

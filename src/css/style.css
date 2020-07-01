@@ -1,0 +1,40 @@
+
+@import url('components/header.css');
+@import url('components/footer.css');
+@import url('components/keyframes.css');
+@import url('components/search-input.css');
+@import url('background-slides.css');
+@import url('components/keyboard.css');
+@import url('components/film-modal.css');
+@import url('components/series-modal.css');
+@import url('components/burger-menu.css');
+@import url('media-responsive.css');
+@import url('components/swiper.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.display-none {
+    display: none;
+}

@@ -1,0 +1,178 @@
+.search {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 65px;
+    width: 70%;
+    color: rgb(33, 37, 41);
+    height: 45px;
+    margin-top: 20px;
+}
+
+.info {
+    min-width: 100px;
+    min-height: 0;
+    width: auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'IM Fell Double Pica SC', serif;
+    letter-spacing: 2px;
+    font-weight: 800;
+    background-color: white;
+}
+
+.search .search-input {
+    width: calc(100% - 90px);
+    max-width: 1350px;
+}
+
+.search-input {
+    z-index: 3;
+    background-image: url(../../img/dragonSearch.png);
+    background-repeat: no-repeat;
+    background-size: 34px;
+    background-position: 10px 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: rgb(123, 138, 139);
+    cursor: text;
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    height: 35px;
+    padding: 8px 15px;
+    padding-left: 65px;
+}
+
+.search-btn {
+    z-index: 3;
+    border: 2px solid rgb(202, 42, 25);
+    background-color: red;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+    height: 45px;
+    padding: 8px 15px;
+    width: 90px;
+    margin-left: 10px
+}
+
+.search-btn:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(202, 42, 25);
+}
+
+.search-btn:active {
+    background-color: white;
+    box-shadow: 0 2px #141213, 0 1px 6px rgba(0, 0, 0, .4), inset 0 1px rgba(255, 255, 255, .3), inset 0 0 3px rgba(255, 255, 255, .5);
+    -webkit-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+}
+
+.search-clear {
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    background-image: url(../../img/clear.png);
+    background-size: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 230px;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 3;
+}
+
+.search-micro {
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    background-image: url(../../img/micto.png);
+    background-size: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 110px;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 3;
+}
+
+.search-tia {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-image: url(../../img/keyboard.png);
+    background-size: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 140px;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 3;
+}
+
+.preloader {
+    top: 0;
+    left: 0;
+    margin-left: 5px;
+}
+
+.loader {
+    display: block;
+    position: absolute;
+    ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    top: -10px;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
